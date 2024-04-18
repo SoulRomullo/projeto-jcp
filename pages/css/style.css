@@ -1,0 +1,172 @@
+/* STYLE GLOBAL*/
+a, i {
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+/* COLOR TEXT */
+h1,
+p {
+    color: #E6E6E6;
+}
+
+/* HEADER */
+#header {
+    height: 130px;
+    padding: 20px;
+    background-color: #1B1B1B;
+    text-align: center;
+    border-bottom: 3px solid #713B3A;
+}
+ 
+#logo-container h1,  
+#logo {
+    background-color: #1B1B1B;
+}
+
+#header p {
+    margin-bottom: 0;
+    color: #E6E6E6;
+    background-color: #1B1B1B;
+}
+
+#header h1,
+p {
+    font-family: "Cabin", sans-serif;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+#header h1 {
+    padding-top: 8px;
+}
+
+@media(min-width: 768px) {
+    #header {
+        height: 160px;
+    }
+    #logo {
+        width: 140px;
+        height: 70px;
+    }
+    #header h1 {
+        padding-top: 0;
+    }
+}
+
+/* NAVBAR */
+#navbar {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#navbar a {
+    width: 80px;
+    color: #1B1B1B;
+    font-weight: 500;
+}
+
+#navbar a:hover {
+    color: #713B3A;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+/* SLIDER BANNER */
+#banners-container {
+    padding: 0;
+}
+
+.carousel-caption {
+    background-color: #1B1B1B;
+    bottom: 1em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+    border-radius: 10px;
+}
+
+
+.carousel-caption h5 {
+    font-size: 1em;
+}
+    
+@media (min-width: 768px) {
+    #slider .carousel-item,
+    #slider img {
+        height: 750px;
+    }
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
+    .carousel-caption h5 {
+        font-size: 3em;
+    }
+}
+
+/* PRESENTATION */
+#presentation {
+    margin-top: 20px;
+}
+#presentation h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#presentation .card {
+    border-width: 0;
+}
+
+#presentation img {
+    width: 400px;
+}
+
+#presentation #text, #presentation span {
+    width: 350px;
+    align-items: center;
+    padding: 20px;
+    color: #1B1B1B;
+    background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+    #presentation #text, #presentation span {
+        width: 450px;
+    }
+}
+
+
+/* WHATSAPP */
+#whatsapp {
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* PALETAS DE CORES 
+*{
+    background-color: #D3D3D3;
+    background-color: #E6E6E6;
+    background-color: #713B3A;
+    background-color: #202020;
+    background-color: #1B1B1B;
+}
+*/
