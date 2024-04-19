@@ -5,9 +5,8 @@ a, i {
 }
 
 /* COLOR TEXT */
-h1,
 p {
-    color: #E6E6E6;
+    color: #1B1B1B;
 }
 
 /* HEADER */
@@ -21,6 +20,7 @@ p {
  
 #logo-container h1,  
 #logo {
+    color: #E6E6E6;
     background-color: #1B1B1B;
 }
 
@@ -35,12 +35,21 @@ p {
     font-family: "Cabin", sans-serif;
 }
 
+#logo-container #car-logo {
+    background-image: url('../../logo/logo-car.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    margin-right: 8px;
+}
+
 #logo-container {
     display: flex;
     justify-content: center;
 }
 
-#logo {
+#car-logo {
     width: 100px;
     height: 50px;
     margin-right: 8px;
@@ -54,12 +63,24 @@ p {
     #header {
         height: 160px;
     }
-    #logo {
+    #logo-container #car-logo {
         width: 140px;
+        background-size: 140px;
         height: 70px;
     }
     #header h1 {
         padding-top: 0;
+    }
+}
+
+@media(max-width: 356px) {
+    #logo-container #car-logo {
+        background-image: none;
+    }
+    #header h1 {
+        width: 100%;
+        margin-right: 20%;
+        text-align: center;
     }
 }
 
@@ -85,6 +106,10 @@ p {
 /* SLIDER BANNER */
 #banners-container {
     padding: 0;
+}
+
+#banners-container p {
+    color: #E6E6E6;
 }
 
 .carousel-caption {
@@ -147,6 +172,52 @@ p {
     }
 }
 
+
+/* Armoured-car */
+#armoured-car {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#armoured-car h2 {
+    font-weight: 700;
+}
+
+#text-car p{
+    padding: 20px;
+    color: #1B1B1B;
+}
+
+/* Car description */
+
+#car-description .card {
+    margin-bottom: 20px;
+}
+
+#car-description .card p {
+    padding: 20px;
+}
+
+#car-description h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Travel description */
+
+#travel-description {
+    margin-top: 30px;
+}
+
+#travel-description h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+#travel-description #text {
+    padding: 20px;
+    padding-top: 40px;
+}
 
 /* WHATSAPP */
 #whatsapp {
