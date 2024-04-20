@@ -5,7 +5,22 @@ a, i {
 }
 
 /* COLOR TEXT */
-p {
+.text-p-black {
+    color: #1B1B1B;
+}
+
+.text-h1-white {
+    color: #E6E6E6;
+}
+
+.text-p-white {
+    color: #E6E6E6;
+}
+
+.text-h2-black {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
     color: #1B1B1B;
 }
 
@@ -17,10 +32,11 @@ p {
     text-align: center;
     border-bottom: 3px solid #713B3A;
 }
- 
-#logo-container h1,  
+   
 #logo {
-    color: #E6E6E6;
+    width: 100px;
+    height: 50px;
+    margin-right: 8px;
     background-color: #1B1B1B;
 }
 
@@ -31,17 +47,8 @@ p {
 }
 
 #header h1,
-p {
+#header p {
     font-family: "Cabin", sans-serif;
-}
-
-#logo-container #car-logo {
-    background-image: url('../../logo/logo-car.png');
-    background-size: 100px;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 50px;
-    margin-right: 8px;
 }
 
 #logo-container {
@@ -49,11 +56,6 @@ p {
     justify-content: center;
 }
 
-#car-logo {
-    width: 100px;
-    height: 50px;
-    margin-right: 8px;
-}
 
 #header h1 {
     padding-top: 8px;
@@ -62,8 +64,9 @@ p {
 @media(min-width: 768px) {
     #header {
         height: 160px;
+        padding-top: 40px;
     }
-    #logo-container #car-logo {
+    #logo {
         width: 140px;
         background-size: 140px;
         height: 70px;
@@ -73,16 +76,6 @@ p {
     }
 }
 
-@media(max-width: 356px) {
-    #logo-container #car-logo {
-        background-image: none;
-    }
-    #header h1 {
-        width: 100%;
-        margin-right: 20%;
-        text-align: center;
-    }
-}
 
 /* NAVBAR */
 #navbar {
@@ -144,11 +137,6 @@ p {
 #presentation {
     margin-top: 20px;
 }
-#presentation h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
 
 #presentation .card {
     border-width: 0;
@@ -177,15 +165,24 @@ p {
 #armoured-car {
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
-#armoured-car h2 {
-    font-weight: 700;
+#armoured-car img {
+    width: 350px;
 }
 
-#text-car p{
+#armoured-car .text-p-black{
+    margin-top: 20px;
     padding: 20px;
-    color: #1B1B1B;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    #armoured-car img {
+        width: 450px;
+        margin-top: 80px;
+    }
 }
 
 /* Car description */
@@ -198,26 +195,97 @@ p {
     padding: 20px;
 }
 
-#car-description h2 {
-    margin-bottom: 50px;
-    font-weight: 700;
-}
-
 /* Travel description */
 
 #travel-description {
     margin-top: 30px;
 }
 
-#travel-description h2 {
-    margin-bottom: 50px;
-    font-weight: 700;
-}
-
 #travel-description #text {
     padding: 20px;
     padding-top: 40px;
 }
+
+/* Carousel driver*/
+
+#carousel-driver {
+    margin-top: 20px;
+}
+
+#carousel-driver .carousel-item {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#driver {
+    background-color: #1B1B1B;
+    height: 450px;
+   
+}
+
+.carousel-item img {
+    width: 200px;
+    
+}
+
+#driver .name-driver h5 {
+    padding-top: 15px;
+    font-size: 1em;
+    color: #E6E6E6;
+}
+
+#driver .name-driver p {
+    font-size: 2em;
+    color: #E6E6E6;
+}
+
+/* Contact */
+
+#contact {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    padding-top: 20px;
+}
+
+#contact-img img {
+    width: 300px;
+}
+
+#contact-img {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact .bi{
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #1B1B1B;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #713B3A;
+    text-decoration: underline;
+}
+
+
+/* Footer developer */
+#footer-developer {
+    padding: 20px;
+    height: 100px;
+    background-color: #1B1B1B;
+    text-align: center;
+}
+#footer-developer p {
+    margin: 0 auto;
+    color: #E6E6E6;
+}
+
 
 /* WHATSAPP */
 #whatsapp {
